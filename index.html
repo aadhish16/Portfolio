@@ -7,38 +7,68 @@
 	<meta name="description" content="Portfolio of Aadhish Kumar S — Computer Engineering student specializing in IoT, AI/ML, and Embedded Systems. Projects, skills, and certifications.">
 	<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><circle cx=%2250%22 cy=%2250%22 r=%2240%22 fill=%22%234f46e5%22/></svg>">
 
-<meta property="og:title" content="Aadhish Kumar S · Portfolio">
-<meta property="og:description" content="Computer Engineering · IoT · AI/ML · Embedded Systems">
-<meta property="og:type" content="website">
-<meta property="og:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&h=630&fit=crop">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="630">
-<meta name="theme-color" content="#0f172a">
+	<meta property="og:title" content="Aadhish Kumar S · Portfolio">
+	<meta property="og:description" content="Computer Engineering · IoT · AI/ML · Embedded Systems">
+	<meta property="og:type" content="website">
+	<meta property="og:image" content="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=1200&h=630&fit=crop">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta name="theme-color" content="#0f172a">
 
 	<style>
 		:root {
-			--primary: #4f46e5;
-			--primary-2: #6366f1;
-			--secondary: #0f172a;
-			--bg: #0b1020;
-			--bg-2: #0e1327;
-			--text: #dbe4ff;
-			--muted: #9aa4c7;
-			--card: rgba(255,255,255,0.06);
-			--card-border: rgba(255,255,255,0.12);
-			--accent: #ec4899;
-			--success: #10b981;
+			--primary: #5b21b6;
+			--primary-2: #7c3aed;
+			--secondary: #1e293b;
+			--bg: #0f0f23;
+			--bg-2: #151f30;
+			--text: #f8fafc;
+			--muted: #b3b7c1;
+			--card: rgba(255,255,255,0.08);
+			--card-border: rgba(255,255,255,0.15);
+			--accent: #f472b6;
+			--success: #059669;
 
-			--radius: 18px;
-			--shadow: 0 8px 30px rgba(0,0,0,0.35);
-			--shadow-hover: 0 12px 40px rgba(0,0,0,0.5);
-			--blur: saturate(120%) blur(8px);
-			--glass: linear-gradient(180deg, rgba(255,255,255,0.08), rgba(255,255,255,0.03));
-			--grid-gap: clamp(16px, 3vw, 28px);
+			--primary-r: 91;
+			--primary-g: 33;
+			--primary-b: 182;
+			--accent-r: 244;
+			--accent-g: 114;
+			--accent-b: 182;
+			--primary2-r: 124;
+			--primary2-g: 58;
+			--primary2-b: 237;
+
+			--radius: 20px;
+			--shadow: 0 10px 35px rgba(0,0,0,0.4);
+			--shadow-hover: 0 15px 45px rgba(0,0,0,0.55);
+			--blur: saturate(110%) blur(10px);
+			--glass: linear-gradient(180deg, rgba(255,255,255,0.1), rgba(255,255,255,0.04));
+			--grid-gap: clamp(18px, 3.5vw, 30px);
+		}
+
+		/* Typography Enhancements */
+		body {
+			line-height: 1.7;
+			font-variation-settings: 'wght' 400;
+		}
+
+		h1, h2, h3 {
+			line-height: 1.2;
+			letter-spacing: 0.025em;
+			font-variation-settings: 'wght' 700;
+		}
+
+		h1 { font-size: clamp(2.5rem, 6vw, 4rem); }
+		h2 { font-size: clamp(2rem, 5vw, 3rem); }
+		h3 { font-size: clamp(1.5rem, 4vw, 2rem); }
+
+		p, .label {
+			line-height: 1.6;
 		}
 
 		/* Base */
@@ -48,9 +78,9 @@
 			font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, sans-serif;
 			color: var(--text);
 			background:
-				radial-gradient(1200px 600px at 90% -10%, rgba(79,70,229,0.25), transparent 40%),
-				radial-gradient(1000px 600px at -10% -10%, rgba(236,72,153,0.15), transparent 50%),
-				radial-gradient(1200px 900px at 50% 120%, rgba(99,102,241,0.2), transparent 40%),
+				radial-gradient(1200px 600px at 90% -10%, rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.25), transparent 40%),
+				radial-gradient(1000px 600px at -10% -10%, rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.15), transparent 50%),
+				radial-gradient(1200px 900px at 50% 120%, rgba(var(--primary2-r), var(--primary2-g), var(--primary2-b), 0.2), transparent 40%),
 				linear-gradient(180deg, var(--bg), var(--bg-2));
 			background-attachment: fixed;
 			line-height: 1.6;
@@ -62,6 +92,76 @@
 			width: min(1200px, 92%);
 			margin: 0 auto;
 			padding: 0 16px;
+		}
+
+		/* Loading Screen */
+		#loader {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: var(--bg);
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			z-index: 9999;
+			transition: opacity 0.8s ease, visibility 0.8s ease;
+		}
+		#loader.fade-out {
+			opacity: 0;
+			visibility: hidden;
+		}
+		.loader-content {
+			text-align: center;
+		}
+		.loader-logo {
+			display: flex;
+			align-items: center;
+			gap: 12px;
+			margin-bottom: 30px;
+		}
+		.loader-logo .badge-dot {
+			width: 16px;
+			height: 16px;
+			border-radius: 50%;
+			background: conic-gradient(from 0deg, var(--primary), var(--accent), var(--primary));
+			box-shadow: 0 0 18px rgba(var(--primary2-r), var(--primary2-g), var(--primary2-b), 0.65);
+			animation: pulse 2.4s ease infinite;
+		}
+		.loader-logo span {
+			font-weight: 800;
+			font-size: 24px;
+			letter-spacing: 0.3px;
+		}
+		.loader-spinner {
+			width: 50px;
+			height: 50px;
+			border: 4px solid rgba(255,255,255,0.1);
+			border-top: 4px solid var(--primary);
+			border-radius: 50%;
+			animation: spin 1.2s linear infinite;
+			margin: 0 auto 20px;
+		}
+		@keyframes spin {
+			0% { transform: rotate(0deg); }
+			100% { transform: rotate(360deg); }
+		}
+		.loader-progress {
+			width: 200px;
+			height: 4px;
+			background: rgba(255,255,255,0.1);
+			border-radius: 2px;
+			overflow: hidden;
+			margin: 20px auto;
+		}
+		.loader-progress-bar {
+			height: 100%;
+			width: 0%;
+			background: linear-gradient(90deg, var(--primary), var(--accent));
+			border-radius: 2px;
+			transition: width 0.4s ease;
 		}
 
 		/* Fancy gradient border utility */
@@ -192,13 +292,13 @@
 		.badge-dot {
 			width: 10px; height: 10px; border-radius: 50%;
 			background: conic-gradient(from 0deg, var(--primary), var(--accent), var(--primary));
-			box-shadow: 0 0 18px rgba(99,102,241,0.65);
+			box-shadow: 0 0 18px rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.65);
 			animation: pulse 2.4s ease infinite;
 		}
 		@keyframes pulse {
-			0% { transform: scale(1); box-shadow: 0 0 18px rgba(99,102,241,0.6); }
-			50% { transform: scale(1.15); box-shadow: 0 0 28px rgba(236,72,153,0.55); }
-			100% { transform: scale(1); box-shadow: 0 0 18px rgba(99,102,241,0.6); }
+			0% { transform: scale(1); box-shadow: 0 0 18px rgba(var(--primary2-r), var(--primary2-g), var(--primary2-b), 0.6); }
+			50% { transform: scale(1.15); box-shadow: 0 0 28px rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.55); }
+			100% { transform: scale(1); box-shadow: 0 0 18px rgba(var(--primary2-r), var(--primary2-g), var(--primary2-b), 0.6); }
 		}
 
 		.nav-links {
@@ -240,7 +340,7 @@
 			background: linear-gradient(90deg, var(--primary), var(--accent));
 			color: #fff;
 			text-decoration: none;
-			box-shadow: 0 8px 24px rgba(99,102,241,0.35);
+			box-shadow: 0 8px 24px rgba(var(--primary-r), var(--primary-g), var(--primary-b), 0.35);
 			transition: transform .2s ease, box-shadow .2s ease;
 			position: relative;
 			overflow: hidden;
@@ -260,7 +360,7 @@
 		.nav-cta:hover::before {
 			left: 100%;
 		}
-		.nav-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(236,72,153,0.3); }
+		.nav-cta:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(var(--accent-r), var(--accent-g), var(--accent-b), 0.3); }
 
 		.menu {
 			display: none;
@@ -304,7 +404,7 @@
 			animation: fadeIn 1s ease;
 		}
 		.hero h1 {
-			font-size: clamp(34px, 5.4vw, 62px);
+			font-size: clamp(38px, 6vw, 68px);
 			line-height: 1.05;
 			margin: 14px 0 10px;
 			font-weight: 800;
@@ -418,12 +518,37 @@
 		.stats {
 			display: grid; gap: var(--grid-gap);
 			grid-template-columns: repeat(4, minmax(0,1fr));
+			background: linear-gradient(135deg, rgba(99,102,241,0.08), rgba(236,72,153,0.08));
+			border-radius: 16px;
+			padding: 24px;
+			backdrop-filter: blur(10px);
+			border: 1px solid rgba(255,255,255,0.06);
 		}
 		.stat {
 			text-align: center;
-			padding: 20px;
+			padding: 30px;
 			position: relative;
 			overflow: hidden;
+		}
+		.stat-icon {
+			font-size: 28px;
+			color: var(--primary);
+			margin-bottom: 12px;
+			display: block;
+			opacity: 0.8;
+			transition: opacity 0.3s ease, transform 0.3s ease;
+		}
+		.stat:hover .stat-icon {
+			opacity: 1;
+			animation: bounce 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		}
+		@keyframes bounce {
+			0%, 100% {
+				transform: scale(1) translateY(0);
+			}
+			50% {
+				transform: scale(1.1) translateY(-3px);
+			}
 		}
 		.stat::before {
 			content: '';
@@ -441,7 +566,7 @@
 			opacity: 1;
 		}
 		.stat .num {
-			font-size: clamp(28px, 3.5vw, 44px);
+			font-size: clamp(32px, 4vw, 48px);
 			font-weight: 800;
 			background: linear-gradient(90deg, #b5beff, #ffb3da);
 			background-clip: text;
@@ -523,7 +648,7 @@
 			opacity: 1;
 		}
 		.project img {
-			width: 100%; height: 100%; object-fit: cover; transition: transform .8s ease;
+			width: 100%; height: 100%; object-fit: cover; transition: transform 0.8s ease-in-out;
 		}
 		.project:hover img { transform: scale(1.1); }
 		.project .body { padding: 20px; }
@@ -689,6 +814,53 @@
 			100% { background-position: 100% 50%; }
 		}
 
+		/* Enhanced animations */
+		.reveal {
+			opacity: 0;
+			transform: translateY(30px);
+			transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		}
+		.reveal.active {
+			opacity: 1;
+			transform: translateY(0);
+		}
+		.reveal-left {
+			opacity: 0;
+			transform: translateX(-30px);
+			transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		}
+		.reveal-left.active {
+			opacity: 1;
+			transform: translateX(0);
+		}
+		.reveal-right {
+			opacity: 0;
+			transform: translateX(30px);
+			transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		}
+		.reveal-right.active {
+			opacity: 1;
+			transform: translateX(0);
+		}
+		.reveal-scale {
+			opacity: 0;
+			transform: scale(0.9);
+			transition: opacity 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+		}
+		.reveal-scale.active {
+			opacity: 1;
+			transform: scale(1);
+		}
+
+		/* Hover effects for cards */
+		.hover-lift {
+			transition: transform 0.3s ease, box-shadow 0.3s ease;
+		}
+		.hover-lift:hover {
+			transform: translateY(-5px);
+			box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+		}
+
 		/* Responsive */
 		@media (max-width: 1024px) {
 			.grid-hero { grid-template-columns: 1fr; }
@@ -713,10 +885,30 @@
 		@media (prefers-reduced-motion: reduce) {
 			* { animation: none !important; transition: none !important; }
 			html, body { scroll-behavior: auto; }
+			.reveal, .reveal-left, .reveal-right, .reveal-scale {
+				opacity: 1;
+				transform: none;
+				transition: none;
+			}
 		}
 	</style>
 </head>
 <body>
+	<!-- Loading Screen -->
+	<div id="loader">
+		<div class="loader-content">
+			<div class="loader-logo">
+				<span class="badge-dot" aria-hidden="true"></span>
+				<span>Aadhish&nbsp;Kumar</span>
+			</div>
+			<div class="loader-spinner"></div>
+			<div class="loader-progress">
+				<div class="loader-progress-bar"></div>
+			</div>
+			<p>Loading portfolio...</p>
+		</div>
+	</div>
+
 	<div class="floating-shapes">
 		<span></span>
 		<span></span>
@@ -724,6 +916,8 @@
 	</div>
 	
 	<div id="particles-js"></div>
+
+
 
 	<header>
 		<div class="container nav">
@@ -744,7 +938,7 @@
 		</div>
 	</header>
 
-	<main>
+	<main id="main">
 		<section id="home" class="hero">
 			<div class="container grid-hero">
 				<div>
@@ -758,7 +952,7 @@
 					</div>
 				</div>
 
-				<div class="gb preview" aria-label="Showcase">
+				<div class="gb preview reveal-right" aria-label="Showcase">
 					<div class="light" aria-hidden="true"></div>
 					<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Tech workspace representing IoT and AI">
 				</div>
@@ -767,22 +961,26 @@
 
 		<section class="section">
 			<div class="container">
-				<div class="gb" style="padding:20px;">
+				<div class="gb reveal-scale" style="padding:20px;">
 					<div class="stats">
 						<div class="stat">
-							<div class="num">9.93</div>
+							<i class="fas fa-graduation-cap stat-icon"></i>
+							<div class="num" data-target="9.93">0</div>
 							<div class="label">Current CGPA</div>
 						</div>
 						<div class="stat">
-							<div class="num">8+</div>
+							<i class="fas fa-project-diagram stat-icon"></i>
+							<div class="num" data-target="8">0</div>
 							<div class="label">Projects Completed</div>
 						</div>
 						<div class="stat">
-							<div class="num">8+</div>
+							<i class="fas fa-cogs stat-icon"></i>
+							<div class="num" data-target="8+">0</div>
 							<div class="label">Technologies</div>
 						</div>
 						<div class="stat">
-							<div class="num">6+</div>
+							<i class="fas fa-certificate stat-icon"></i>
+							<div class="num" data-target="9+">0</div>
 							<div class="label">Certifications</div>
 						</div>
 					</div>
@@ -792,10 +990,10 @@
 
 		<section id="education" class="section">
 			<div class="container">
-				<h2>Education</h2>
-				<p class="sub">My academic journey and achievements</p>
+				<h2 class="reveal">Education</h2>
+				<p class="sub reveal" style="transition-delay: 0.1s">My academic journey and achievements</p>
 				<div class="grid-1">
-					<article class="gb card">
+					<article class="gb card reveal" style="transition-delay: 0.2s">
 						<div class="card-row">
 							<div class="icon"><i class="fas fa-graduation-cap" aria-hidden="true"></i></div>
 							<div>
@@ -806,7 +1004,7 @@
 						</div>
 					</article>
 
-					<article class="gb card">
+					<article class="gb card reveal" style="transition-delay: 0.3s">
 						<div class="card-row">
 							<div class="icon"><i class="fas fa-school" aria-hidden="true"></i></div>
 							<div>
@@ -822,11 +1020,11 @@
 
 		<section id="skills" class="section">
 			<div class="container">
-				<h2>Technical Skills</h2>
-				<p class="sub">Technologies and tools I'm proficient with</p>
+				<h2 class="reveal">Technical Skills</h2>
+				<p class="sub reveal" style="transition-delay: 0.1s">Technologies and tools I'm proficient with</p>
 
 				<div class="grid-3">
-					<article class="gb card">
+					<article class="gb card reveal" style="transition-delay: 0.2s">
 						<div class="icon"><i class="fas fa-code"></i></div>
 						<h3>Programming Languages</h3>
 						<p class="muted">Proficient in multiple languages for different application domains.</p>
@@ -835,7 +1033,7 @@
 						</div>
 					</article>
 
-					<article class="gb card">
+					<article class="gb card reveal" style="transition-delay: 0.25s">
 						<div class="icon"><i class="fas fa-microchip"></i></div>
 						<h3>IoT & Embedded</h3>
 						<p class="muted">Hands-on with prototyping and connected device systems.</p>
@@ -844,7 +1042,7 @@
 						</div>
 					</article>
 
-					<article class="gb card">
+					<article class="gb card reveal" style="transition-delay: 0.3s">
 						<div class="icon"><i class="fas fa-brain"></i></div>
 						<h3>AI/ML & Data</h3>
 						<p class="muted">Modeling, inference, and computer vision pipelines.</p>
@@ -853,7 +1051,7 @@
 						</div>
 					</article>
 
-					<article class="gb card">
+					<article class="gb card reveal" style="transition-delay: 0.35s">
 						<div class="icon"><i class="fas fa-laptop-code"></i></div>
 						<h3>Web Development</h3>
 						<p class="muted">Responsive, performant, and accessible experiences.</p>
@@ -862,7 +1060,7 @@
 						</div>
 					</article>
 
-					<article class="gb card">
+					<article class="gb card reveal" style="transition-delay: 0.4s">
 						<div class="icon"><i class="fas fa-tools"></i></div>
 						<h3>Tools & Platforms</h3>
 						<p class="muted">Daily drivers and project tooling.</p>
@@ -871,7 +1069,7 @@
 						</div>
 					</article>
 
-					<article class="gb card">
+					<article class="gb card reveal" style="transition-delay: 0.45s">
 						<div class="icon"><i class="fas fa-language"></i></div>
 						<h3>Languages</h3>
 						<p class="muted">Clear communication across teams.</p>
@@ -885,11 +1083,11 @@
 
 		<section id="projects" class="section">
 			<div class="container">
-				<h2>Projects</h2>
-				<p class="sub">Some of my recent work and personal projects</p>
+				<h2 class="reveal">Projects</h2>
+				<p class="sub reveal" style="transition-delay: 0.1s">Some of my recent work and personal projects</p>
 
 				<div class="grid-2">
-					<article class="gb project">
+					<article class="gb project reveal-left" style="transition-delay: 0.2s">
 						<div class="thumb">
 							<img src="https://tse1.mm.bing.net/th/id/OIP.wQ4_Q3Oi6XTfBqMg6rq3YgHaE6?w=474&h=474&c=7&p=0" alt="IoT-Based Smart Home Prototype">
 						</div>
@@ -900,7 +1098,7 @@
 						</div>
 					</article>
 
-					<article class="gb project">
+					<article class="gb project reveal-right" style="transition-delay: 0.25s">
 						<div class="thumb">
 							<img src="https://tse1.mm.bing.net/th/id/OIP.0NfxwBISXFovAbD8SQdc9gAAAA?w=389&h=389&c=7&p=0" alt="Helmet & Vehicle Detection System">
 						</div>
@@ -914,7 +1112,7 @@
 						</div>
 					</article>
 
-					<article class="gb project">
+					<article class="gb project reveal-left" style="transition-delay: 0.3s">
 						<div class="thumb">
 							<img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Smart IoT College Administrator System">
 						</div>
@@ -928,7 +1126,7 @@
 						</div>
 					</article>
 
-					<article class="gb project">
+					<article class="gb project reveal-right" style="transition-delay: 0.35s">
 						<div class="thumb">
 							<img src="https://tse3.mm.bing.net/th/id/OIP.xaJ2TT0uD5pEYubMBAGHFQHaE8?w=474&h=474&c=7&p=0" alt="IoT Pothole Detector concept">
 						</div>
@@ -939,7 +1137,7 @@
 						</div>
 					</article>
 
-					<article class="gb project">
+					<article class="gb project reveal-left" style="transition-delay: 0.4s">
 						<div class="thumb">
 							<img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Air Mouse Using OpenCV">
 						</div>
@@ -953,7 +1151,7 @@
 						</div>
 					</article>
 
-					<article class="gb project">
+					<article class="gb project reveal-right" style="transition-delay: 0.45s">
 						<div class="thumb">
 							<img src="https://images.unsplash.com/photo-1568992687947-868a62a9f521?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Certificate Builder for Organizations">
 						</div>
@@ -967,7 +1165,7 @@
 						</div>
 					</article>	
 
-					<article class="gb project">
+					<article class="gb project reveal-left" style="transition-delay: 0.5s">
 						<div class="thumb">
 							<img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="SGPA & CGPA Calculator">
 						</div>
@@ -982,7 +1180,7 @@
 						</div>
 					</article>
 
-					<article class="gb project">
+					<article class="gb project reveal-right" style="transition-delay: 0.55s">
 						<div class="thumb">
 							<img src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Interactive Resume Builder">
 						</div>
@@ -998,51 +1196,51 @@
 
 		<section id="certs" class="section">
 			<div class="container">
-				<h2>Certifications</h2>
-				<p class="sub">Professional certifications and achievements</p>
+				<h2 class="reveal">Certifications</h2>
+				<p class="sub reveal" style="transition-delay: 0.1s">Professional certifications and achievements</p>
 
 				<div class="grid-3">
-					<div class="gb card center">
+					<div class="gb card center reveal" style="transition-delay: 0.2s">
 						<div class="icon"><i class="fas fa-certificate"></i></div>
 						<h3>NCC A Certificate</h3>
 						<p class="muted">National Cadet Corps</p>
 					</div>
-					<div class="gb card center">
+					<div class="gb card center reveal" style="transition-delay: 0.25s">
 						<div class="icon"><i class="fas fa-certificate"></i></div>
 						<h3>IoT Fundamentals Certification</h3>
 						<p class="muted">Industry Certification</p>
 					</div>
-					<div class="gb card center">
+					<div class="gb card center reveal" style="transition-delay: 0.3s">
 						<div class="icon"><i class="fas fa-certificate"></i></div>
 						<h3>Python for Beginners</h3>
 						<p class="muted">Cisco</p>
 					</div>
-					<div class="gb card center">
+					<div class="gb card center reveal" style="transition-delay: 0.35s">
 						<div class="icon"><i class="fas fa-certificate"></i></div>
 						<h3>HPE Software Engineering Job Simulation</h3>
 						<p class="muted">Hewlett Packard Enterprise</p>
 					</div>
-					<div class="gb card center">
+					<div class="gb card center reveal" style="transition-delay: 0.4s">
 						<div class="icon"><i class="fas fa-certificate"></i></div>
 						<h3>AWS Solutions Architecture Job Simulation</h3>
 						<p class="muted">Amazon Web Services</p>
 					</div>
-					<div class="gb card center">
+					<div class="gb card center reveal" style="transition-delay: 0.45s">
 						<div class="icon"><i class="fas fa-certificate"></i></div>
 						<h3>Deloitte Cyber Job Simulation</h3>
 						<p class="muted">Deloitte Australia</p>
 					</div>
-					<div class="gb card center">
+					<div class="gb card center reveal" style="transition-delay: 0.5s">
 						<div class="icon"><i class="fas fa-certificate"></i></div>
 						<h3>CyberSecurity Master Class</h3>
 						<p class="muted">Scholar Peak</p>
 					</div>
-					<div class="gb card center">
+					<div class="gb card center reveal" style="transition-delay: 0.55s">
 						<div class="icon"><i class="fas fa-certificate"></i></div>
 						<h3>Network Ninja's Firewall Defense Hack</h3>
 						<p class="muted">DevTown</p>
 					</div>
-					<div class="gb card center">
+					<div class="gb card center reveal" style="transition-delay: 0.6s">
 						<div class="icon"><i class="fas fa-certificate"></i></div>
 						<h3>Micro-Internship in Data Visualization</h3>
 						<p class="muted">TATA</p>
@@ -1053,11 +1251,11 @@
 
 		<section id="contact" class="section">
 			<div class="container">
-				<h2>Get In Touch</h2>
-				<p class="sub">I'm currently available for internship opportunities</p>
+				<h2 class="reveal">Get In Touch</h2>
+				<p class="sub reveal" style="transition-delay: 0.1s">I'm currently available for internship opportunities</p>
 
 				<div class="grid-2">
-					<div class="gb card">
+					<div class="gb card reveal-left" style="transition-delay: 0.2s">
 						<h3>Let's Connect!</h3>
 						<p class="muted">I'm actively seeking internship opportunities in IoT, AI/ML, and embedded systems. If you have an opening or want to collaborate, reach out via any of these.</p>
 						<div class="tags" aria-label="Areas of interest">
@@ -1071,10 +1269,10 @@
 						<div class="social">
 							<a class="sq" href="http://www.linkedin.com/in/aadhish-kumar" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
 							<a class="sq" href="https://github.com/aadhish16" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
-													</div>
-			
-</div>		
-					<div class="grid-2">
+						</div>
+					</div>
+					
+					<div class="grid-2 reveal-right" style="transition-delay: 0.3s">
 						<div class="gb card center">
 							<div class="icon"><i class="fas fa-envelope"></i></div>
 							<h3>Email</h3>
@@ -1096,7 +1294,6 @@
 							<p><a href="http://linkedin.com/in/aadhish-kumar" class="link" target="_blank" rel="noopener">linkedin.com/in/aadhish-kumar</a></p>
 						</div>
 					</div>
-
 				</div>
 			</div>
 		</section>
@@ -1114,19 +1311,51 @@
 
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script>
-		// Initialize particles.js
+		// Enhanced loading screen
 		document.addEventListener('DOMContentLoaded', function() {
+			const loader = document.getElementById('loader');
+			const progressBar = document.querySelector('.loader-progress-bar');
+			
+			// Simulate loading progress
+			let progress = 0;
+			const interval = setInterval(() => {
+				progress += Math.random() * 15;
+				if (progress >= 100) {
+					progress = 100;
+					clearInterval(interval);
+					
+					// Initialize particles after a short delay
+					setTimeout(initParticles, 300);
+					
+					// Hide loader after particles are initialized
+					setTimeout(() => {
+						loader.classList.add('fade-out');
+						setTimeout(() => {
+							loader.style.display = 'none';
+							// Initialize scroll animations after page is loaded
+							initScrollAnimations();
+							// Initialize counter animations
+							animateCounters();
+						}, 800);
+					}, 500);
+				}
+				progressBar.style.width = progress + '%';
+			}, 150);
+		});
+
+		// Enhanced particle system
+		function initParticles() {
 			particlesJS('particles-js', {
 				"particles": {
 					"number": {
-						"value": 80,
+						"value": 120,
 						"density": {
 							"enable": true,
-							"value_area": 800
+							"value_area": 1000
 						}
 					},
 					"color": {
-						"value": "#6366f1"
+						"value": ["#6366f1", "#ec4899", "#8b5cf6"]
 					},
 					"shape": {
 						"type": "circle",
@@ -1136,7 +1365,7 @@
 						}
 					},
 					"opacity": {
-						"value": 0.3,
+						"value": 0.4,
 						"random": true,
 						"anim": {
 							"enable": true,
@@ -1146,32 +1375,32 @@
 						}
 					},
 					"size": {
-						"value": 3,
+						"value": 4,
 						"random": true,
 						"anim": {
 							"enable": true,
-							"speed": 2,
-							"size_min": 0.3,
+							"speed": 3,
+							"size_min": 0.5,
 							"sync": false
 						}
 					},
 					"line_linked": {
 						"enable": true,
-						"distance": 150,
+						"distance": 180,
 						"color": "#6366f1",
-						"opacity": 0.2,
-						"width": 1
+						"opacity": 0.3,
+						"width": 1.5
 					},
 					"move": {
 						"enable": true,
-						"speed": 1,
+						"speed": 2,
 						"direction": "none",
 						"random": true,
 						"straight": false,
 						"out_mode": "out",
 						"bounce": false,
 						"attract": {
-							"enable": false,
+							"enable": true,
 							"rotateX": 600,
 							"rotateY": 1200
 						}
@@ -1192,19 +1421,93 @@
 					},
 					"modes": {
 						"grab": {
-							"distance": 140,
+							"distance": 180,
 							"line_linked": {
-								"opacity": 0.5
+								"opacity": 0.8
 							}
 						},
 						"push": {
-							"particles_nb": 4
+							"particles_nb": 6
+						},
+						"repulse": {
+							"distance": 100,
+							"duration": 0.4
 						}
 					}
 				},
 				"retina_detect": true
 			});
-		});
+		}
+
+		// Enhanced scroll animations
+		function initScrollAnimations() {
+			const revealElements = document.querySelectorAll('.reveal, .reveal-left, .reveal-right, .reveal-scale');
+
+			const revealOnScroll = () => {
+				revealElements.forEach(element => {
+					const elementTop = element.getBoundingClientRect().top;
+					const elementVisible = 150;
+
+					if (elementTop < window.innerHeight - elementVisible) {
+						element.classList.add('active');
+					}
+				});
+			};
+
+			// Initial check
+			revealOnScroll();
+
+			// Check on scroll
+			window.addEventListener('scroll', revealOnScroll);
+		}
+
+		// Counter animation for stats
+		function animateCounters() {
+			const counters = document.querySelectorAll('.stat .num');
+			const duration = 2000; // Total duration in ms
+			const speed = 2; // Adjust for feel
+
+			counters.forEach(counter => {
+				const targetValue = parseFloat(counter.getAttribute('data-target'));
+				let startValue = 0;
+				let startTime = null;
+
+				const easeOutExpo = (t) => t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+
+				const animate = (timestamp) => {
+					if (!startTime) startTime = timestamp;
+					const elapsed = timestamp - startTime;
+					const progress = Math.min(elapsed / duration, 1);
+					const easedProgress = easeOutExpo(progress);
+
+					const currentValue = startValue + (targetValue - startValue) * easedProgress;
+
+					if (targetValue % 1 === 0) {
+						counter.innerText = Math.floor(currentValue);
+					} else {
+						counter.innerText = currentValue.toFixed(2);
+					}
+
+					if (progress < 1) {
+						requestAnimationFrame(animate);
+					} else {
+						counter.innerText = targetValue.toFixed(targetValue % 1 === 0 ? 0 : 2);
+					}
+				};
+
+				// Check if element is in viewport
+				const observer = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						if (entry.isIntersecting) {
+							requestAnimationFrame(animate);
+							observer.unobserve(entry.target);
+						}
+					});
+				}, { threshold: 0.5 });
+
+				observer.observe(counter);
+			});
+		}
 
 		// Simple state
 		const toTop = document.getElementById('toTop');
@@ -1251,33 +1554,6 @@
 			// link already has target="_blank"
 		});
 
-		// Subtle reveal animation on intersection
-		const revealables = document.querySelectorAll('.gb, .project, .card, .stats .stat');
-		revealables.forEach(el => {
-			el.style.opacity = 0;
-			el.style.transform = 'translateY(12px)';
-		});
-		
-		if ('IntersectionObserver' in window) {
-			const io = new IntersectionObserver((entries) => {
-				entries.forEach(entry => {
-					if (entry.isIntersecting) {
-						entry.target.style.transition = 'opacity .6s ease, transform .6s ease';
-						entry.target.style.opacity = 1;
-						entry.target.style.transform = 'translateY(0)';
-						io.unobserve(entry.target);
-					}
-				});
-			}, { threshold: 0.15 });
-			revealables.forEach(el => io.observe(el));
-		} else {
-			// Fallback for browsers without IntersectionObserver
-			revealables.forEach(el => {
-				el.style.opacity = 1;
-				el.style.transform = 'translateY(0)';
-			});
-		}
-
 		// Mobile menu
 		menuBtn?.addEventListener('click', () => {
 			if (mobileMenu.classList.contains('active')) {
@@ -1312,7 +1588,10 @@
 			}
 		});
 
-		// Removed the typing animation as it conflicts with the gradient text animation
+		// Add hover effects to cards
+		document.querySelectorAll('.gb').forEach(card => {
+			card.classList.add('hover-lift');
+		});
 	</script>
 </body>
 </html>
