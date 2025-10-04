@@ -721,6 +721,31 @@
 			background: linear-gradient(90deg, var(--primary), var(--accent));
 			border-radius: 3px;
 		}
+		
+		.footer-name {
+			font-size: 1.5rem;
+			font-weight: 700;
+			margin: 10px 0;
+			display: inline-block;
+			background: linear-gradient(90deg, var(--primary), var(--accent));
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			background-clip: text;
+		}
+		
+		.name-animation {
+			display: flex;
+			justify-content: center;
+			gap: 10px;
+			flex-wrap: wrap;
+			margin: 15px 0;
+		}
+		
+		.name-animation span {
+			display: inline-block;
+			animation: float 3s ease-in-out infinite;
+			animation-delay: calc(var(--i) * 0.1s);
+		}
 
 		/* Scroll-to-top */
 		#toTop {
@@ -861,6 +886,31 @@
 			box-shadow: 0 15px 30px rgba(0,0,0,0.3);
 		}
 
+		/* Focus styles for accessibility */
+		.btn:focus-visible, .link:focus-visible, .sq:focus-visible, .nav-links a:focus-visible {
+			outline: 2px solid var(--primary);
+			outline-offset: 2px;
+		}
+
+		/* Print styles */
+		@media print {
+			#loader, .floating-shapes, #particles-js, header, #toTop, .mobile-menu-panel {
+				display: none !important;
+			}
+			body {
+				background: white !important;
+				color: black !important;
+			}
+			.gb {
+				box-shadow: none !important;
+				border: 1px solid #ddd !important;
+				background: white !important;
+			}
+			.btn, .nav-cta, .sq {
+				display: none !important;
+			}
+		}
+
 		/* Responsive */
 		@media (max-width: 1024px) {
 			.grid-hero { grid-template-columns: 1fr; }
@@ -948,7 +998,7 @@
 					<div class="cta-row">
 						<a class="btn btn-primary" href="#projects"><i class="fas fa-code"></i> View Projects</a>
 						<a class="btn" href="#contact"><i class="fas fa-envelope"></i> Contact Me</a>
-						<a class="btn btn-tertiary" id="resumeBtn" href="https://drive.google.com/file/d/1EAQIdMfKKeVQUgkYZbBLXYcdWt73drzZ/view?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-download"></i> View Resume</a>
+						<a class="btn btn-tertiary" id="resumeBtn" href="https://drive.google.com/file/d/1EAQIdMfKKeVQUgkYZbBLXYcdWt73drzZ/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fas fa-download"></i> View Resume</a>
 					</div>
 				</div>
 
@@ -1108,7 +1158,7 @@
 							<p class="muted">AI-powered detection for rider safety and traffic applications.</p>
 							<div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">YOLO</span><span class="tag">AI/ML</span></div>
 							<div class="links">
-								<a class="link" href="https://drive.google.com/file/d/1cK95fGcyIoYrnmBPtWKRHMTBVhsSi2lr/view?usp=sharing" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Demo</a>
+								<a class="link" href="https://drive.google.com/file/d/1cK95fGcyIoYrnmBPtWKRHMTBVhsSi2lr/view?usp=sharing" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Demo</a>
 							</div>
 						</div>
 					</article>
@@ -1122,7 +1172,7 @@
 							<p class="muted">Automates administrative tasks using IoT for efficiency.</p>
 							<div class="tags"><span class="tag">IoT</span><span class="tag">Web App</span><span class="tag">Automation</span><span class="tag">Database</span></div>
 							<div class="links">
-								<a class="link" href="https://smartiotbasedcollegeadministrative.netlify.app/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Live Demo</a>
+								<a class="link" href="https://smartiotbasedcollegeadministrative.netlify.app/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Live Demo</a>
 							</div>
 						</div>
 					</article>
@@ -1147,7 +1197,7 @@
 							<p class="muted">Hand-gesture cursor control for touch-free interaction.</p>
 							<div class="tags"><span class="tag">Python</span><span class="tag">OpenCV</span><span class="tag">Computer Vision</span><span class="tag">Gesture Control</span></div>
 							<div class="links">
-								<a class="link" href="https://github.com/aadhish16/Air_Mouse_Using_OpenCV" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source Code</a>
+								<a class="link" href="https://github.com/aadhish16/Air_Mouse_Using_OpenCV" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source Code</a>
 							</div>
 						</div>
 					</article>
@@ -1161,7 +1211,7 @@
 							<p class="muted">Automated certificate generation with bulk inputs.</p>
 							<div class="tags"><span class="tag">Web App</span><span class="tag">Automation</span><span class="tag">JavaScript</span><span class="tag">PDF</span></div>
 							<div class="links">
-								<a class="link" href="https://github.com/aadhish16/Certificate-Builder-for-Organizations" target="_blank" rel="noopener"><i class="fab fa-github"></i> Source Code</a>
+								<a class="link" href="https://github.com/aadhish16/Certificate-Builder-for-Organizations" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Source Code</a>
 							</div>
 						</div>
 					</article>	
@@ -1175,8 +1225,8 @@
 							<p class="muted">Fast grade calculations with clear UI.</p>
 							<div class="tags"><span class="tag">Web App</span><span class="tag">JavaScript</span><span class="tag">Education</span><span class="tag">Calculator</span></div>
 							<div class="links">
-								<a class="link" href="https://aadhish16.github.io/sgpa_and_cgpa_calculator/" target="_blank" rel="noopener"><i class="fas fa-globe"></i> Live</a>
-								<a class="link" href="https://github.com/aadhish16/sgpa_and_cgpa_calculator" target="_blank" rel="noopener"><i class="fab fa-github"></i> Code</a>
+								<a class="link" href="https://aadhish16.github.io/sgpa_and_cgpa_calculator/" target="_blank" rel="noopener noreferrer"><i class="fas fa-globe"></i> Live</a>
+								<a class="link" href="https://github.com/aadhish16/sgpa_and_cgpa_calculator" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Code</a>
 							</div>
 						</div>
 					</article>
@@ -1268,8 +1318,8 @@
 							<span class="tag">Robotics</span>
 						</div>	
 						<div class="social">
-							<a class="sq" href="http://www.linkedin.com/in/aadhish-kumar" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-							<a class="sq" href="https://github.com/aadhish16" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+							<a class="sq" href="http://www.linkedin.com/in/aadhish-kumar" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+							<a class="sq" href="https://github.com/aadhish16" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
 						</div>
 					</div>
 					
@@ -1292,7 +1342,7 @@
 						<div class="gb card center">
 							<div class="icon"><i class="fab fa-linkedin"></i></div>
 							<h3>LinkedIn</h3>
-							<p><a href="http://linkedin.com/in/aadhish-kumar" class="link" target="_blank" rel="noopener">linkedin.com/in/aadhish-kumar</a></p>
+							<p><a href="http://linkedin.com/in/aadhish-kumar" class="link" target="_blank" rel="noopener noreferrer">linkedin.com/in/aadhish-kumar</a></p>
 						</div>
 					</div>
 				</div>
@@ -1302,10 +1352,24 @@
 
 	<footer>
 		<div class="container">
-		<H3><marquee behavior="scroll" direction="left">AADHISH KUMAR S</marquee></H3>
-		<H3>AADHISH KUMAR S</H3>
-		<H3><marquee behavior="scroll" direction="right">AADHISH KUMAR S</marquee></H3>
-		<p>2025 All Rights Reserved.</p>
+			<div class="name-animation">
+				<span style="--i:0">A</span>
+				<span style="--i:1">A</span>
+				<span style="--i:2">D</span>
+				<span style="--i:3">H</span>
+				<span style="--i:4">I</span>
+				<span style="--i:5">S</span>
+				<span style="--i:6">H</span>
+				<span style="--i:7">&nbsp;</span>
+				<span style="--i:8">K</span>
+				<span style="--i:9">U</span>
+				<span style="--i:10">M</span>
+				<span style="--i:11">A</span>
+				<span style="--i:12">R</span>
+				<span style="--i:13">&nbsp;</span>
+				<span style="--i:14">S</span>
+			</div>
+			<p>2025 All Rights Reserved.</p>
 		</div>
 	</footer>
 
@@ -1315,36 +1379,28 @@
 
 	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 	<script>
-		// Enhanced loading screen
-		document.addEventListener('DOMContentLoaded', function() {
+		// Enhanced loading screen with real loading detection
+		window.addEventListener('load', function() {
 			const loader = document.getElementById('loader');
 			const progressBar = document.querySelector('.loader-progress-bar');
 			
-			// Simulate loading progress
-			let progress = 0;
-			const interval = setInterval(() => {
-				progress += Math.random() * 15;
-				if (progress >= 100) {
-					progress = 100;
-					clearInterval(interval);
-					
-					// Initialize particles after a short delay
-					setTimeout(initParticles, 300);
-					
-					// Hide loader after particles are initialized
-					setTimeout(() => {
-						loader.classList.add('fade-out');
-						setTimeout(() => {
-							loader.style.display = 'none';
-							// Initialize scroll animations after page is loaded
-							initScrollAnimations();
-							// Initialize counter animations
-							animateCounters();
-						}, 800);
-					}, 500);
-				}
-				progressBar.style.width = progress + '%';
-			}, 150);
+			// Set progress to 100% when page is fully loaded
+			progressBar.style.width = '100%';
+			
+			// Initialize particles
+			initParticles();
+			
+			// Hide loader after particles are initialized
+			setTimeout(() => {
+				loader.classList.add('fade-out');
+				setTimeout(() => {
+					loader.style.display = 'none';
+					// Initialize scroll animations after page is loaded
+					initScrollAnimations();
+					// Initialize counter animations
+					animateCounters();
+				}, 800);
+			}, 500);
 		});
 
 		// Enhanced particle system
@@ -1583,11 +1639,18 @@
 			}
 		});
 
-		// Close mobile menu when clicking outside
+		// Close mobile menu when clicking outside or pressing escape
 		document.addEventListener('click', (e) => {
 			if (mobileMenu.classList.contains('active') && 
 				!mobileMenu.contains(e.target) && 
 				e.target !== menuBtn) {
+				mobileMenu.classList.remove('active');
+			}
+		});
+
+		// Escape key to close mobile menu
+		document.addEventListener('keydown', (e) => {
+			if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
 				mobileMenu.classList.remove('active');
 			}
 		});
